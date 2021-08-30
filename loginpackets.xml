@@ -24,7 +24,8 @@
         <AUTHED/>
       </States>
     </Packet>
-	</ClientPackets>
+  </ClientPackets>
+  	
   <ServerPackets>
     <Packet Name="SMSetFrameworkInformation" Opcode="0x03EB"/>
     <Packet Name="SMNak" Opcode="0x03F3" />
