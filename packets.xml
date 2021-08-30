@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<Protocol>
+  <ClientPackets>
+    <Packet Name="CMHeartbeat" Opcode="0x03E9">
+      <States>
+        <AUTHED/>
+        <AUTHED_GG/>
+        <CONNECTED/>
+        <ENTERED/>
+      </States>
+    </Packet>
+	<Packet Name="CMLoginUserToFieldServer" Opcode="0x014A7"> 
+      <States>
+        <CONNECTED/>
+      </States>
+    </Packet>
+	<Packet Name="CMGetInstallationList" Opcode="0x1607">
+      <States>
+        <AUTHED/>
+        <ENTERED/>
+      </States>
+    </Packet>
+	<Packet Name="CMEnableShowTotalStatTier" Opcode="0x16F5">
+	  <States>
+        <AUTHED/>
+		<ENTERED/>
+      </States>
+	</Packet>
+    <Packet Name="CMCreateCharacterToField" Opcode="0x1321"> 
+      <States>
+        <AUTHED/>
+      </States>
+    </Packet>
+	<Packet Name="CMEnterPlayerCharacterToField" Opcode="0x0E36">
+      <States>
+        <AUTHED/>
+        <ENTERED/>
+      </States>
+    </Packet>
+	
+	
+	<!-- ALL FIX -->
+	
+	
+	<!-- ALL FIX FINISH -->
+	
+	<Packet Name="CMChat" Opcode="0x129B"/>
+	<Packet Name="CMEquipItem" Opcode="0x1722"/>
+	<Packet Name="CMUnequipItem" Opcode="0x116D"/>
+	<Packet Name="CMDoAction" Opcode="0x0E12"/>
+	<Packet Name="CMMovePlayer" Opcode="0x11FB"/>
+	<Packet Name="CMSetReadyToPlay" Opcode="0x16D1"/>
+	<Packet Name="CMRefreshCacheData" Opcode="0x1927"/>
+	<Packet Name="CMReadJournal" Opcode="0x0D43"/>
+	<Packet Name="CMListSiegeGuild" Opcode="0x0F9E"/>
+	<Packet Name="CMGetWebBenefit" Opcode="0x0BE8"/>
+	<Packet Name="CMStartAction" Opcode="0x0D1A"/>
+	<Packet Name="CMListEnchantFailCountOfMyCharacter" Opcode="0x0C6D"/>
+	<Packet Name="CMCheckActionVerifyValueT" Opcode="0x131C"/>
+	<Packet Name="CMAcceptQuest" Opcode="0x140C"/>
+	<Packet Name="CMContactNpc" Opcode="0x0F7B"/>
+	<Packet Name="CMBeginDelayedLogout" Opcode="0x176B"/>
+	<Packet Name="CMExitFieldToCharacterSelection" Opcode="0x123A"/>
+	
+  </ClientPackets>
+  <ServerPackets>
+	<!-- ALL FIX -->
+	
+	
+	
+	<!-- ALL FIX FINISH -->
+  
+    <Packet Opcode="0x03EB" Name="SMSetFrameworkInformation" />
+    <Packet Opcode="0x1920" Name="SMGetContentServiceInfo" />
+    <Packet Opcode="0x1102" Name="SMChargeUser" />  	
+	<Packet Opcode="0x0FC8" Name="SMLoginUserToFieldServer" />
+    <Packet Opcode="0x0000" Name="SMSetPlayerCharacterMemo" />
+    <Packet Opcode="0x12D0" Name="SMPcRoomAuth" />
+    <Packet Opcode="0x18F9" Name="SMCreateCharacterToField" />
+	<Packet Opcode="0x0DA9" Name="SMCancelFieldEnterWaiting" />
+	<Packet Opcode="0x0F69" Name="SMEnterPlayerCharacterToField" />
+	<Packet Opcode="0x1759" Name="SMEnterPlayerCharacterToFieldComplete" />
+	<Packet Opcode="0x0ED0" Name="SMLoadField" />
+	<Packet Opcode="0x130B" Name="SMLoadFieldComplete" />
+	<Packet Opcode="0x12E1" Name="SMAddPlayers" /> 
+	<Packet Opcode="0x0C5F" Name="SMChangeServerBusyState" />
+	<Packet Opcode="0x17DB" Name="SMUpdateWeatherManager" />
+	<Packet Opcode="0x1269" Name="SMSetWp" />
+	<Packet Opcode="0x0FDA" Name="SMAddItemToInventory" />
+	<Packet Opcode="0x0D32" Name="SMGetAllEquipSlot" />
+	<Packet Opcode="0x1064" Name="SMInventorySlotCount" />
+	<Packet Opcode="0x0F7F" Name="SMActiveSkillList" />
+	<Packet Opcode="0x1392" Name="SMWarehouseSlotCount" />
+	<Packet Opcode="0x13C4" Name="SMChat" />
+	<Packet Opcode="0x101D" Name="SMNationSiegeStop" />
+	<Packet Opcode="0x1704" Name="SMSetGameTime" />
+	<Packet Opcode="0x15C4" Name="SMVolunteerInfo" />
+	<Packet Opcode="0x162B" Name="SMSkillAwakenList" />
+	<Packet Opcode="0x11C0" Name="SMLifeExperienceInformation" />
+	<Packet Opcode="0x13BF" Name="SMPaymentPassword" />
+	<Packet Opcode="0x0DAF" Name="SMListFitnessExperience" />
+	<Packet Opcode="0x120D" Name="SMListCashItem" />
+	<Packet Opcode="0x13D1" Name="SMSetCharacterLevels" />
+	<Packet Opcode="0x166E" Name="SMSetCharacterPrivatePoints" />
+	<Packet Opcode="0x1702" Name="SMSetCharacterStats" />
+	<Packet Opcode="0x11A5" Name="SMSetCharacterSpeeds" />
+	<Packet Opcode="0x0BD3" Name="SMSetCharacterSkillPoints" />
+	<Packet Opcode="0x0D1C" Name="SMSetCharacterProductSkillPoints" />
+	<Packet Opcode="0x0EB8" Name="SMSetCharacterStatPoint" />
+	<Packet Opcode="0x12FC" Name="SMTradeAdvantage" />
+	<Packet Opcode="0x0CA8" Name="SMTradeSupplyCount" />
+	<Packet Opcode="0x0E13" Name="SMQuickSlotList" />
+	<Packet Opcode="0x161C" Name="SMListQuestSelectType" />
+	<Packet Opcode="0x1792" Name="SMListQuestSortType" />
+	<!--<Packet Name="SMSupportPointList" Opcode="0x15C4"/> -->
+	<Packet Opcode="0x0E57" Name="SMProgressingQuestList" />
+	<Packet Opcode="0x149D" Name="SMClearedQuestList" />
+	<Packet Opcode="0x10B6" Name="SMListCheckedQuest" />
+	<Packet Opcode="0x1588" Name="SMSetCharacterPublicPoints" />
+	<Packet Opcode="0x1879" Name="SMSetCharacterRelatedPoints" />
+	<Packet Opcode="0x1127" Name="SMSetStunPoints" />
+	<Packet Opcode="0x107D" Name="SMAcquiredJournal" />
+	<Packet Opcode="0x186C" Name="SMEquipItem" />
+	<Packet Opcode="0x0C7D" Name="SMUnequipItem" />
+	<Packet Opcode="0x0E84" Name="SMUpdateFloatFishing" />
+	<Packet Opcode="0x11FC" Name="SMNewMail" />
+	<Packet Opcode="0x0BEC" Name="SMUpdateTitleKey" />
+	<Packet Opcode="0x137E" Name="SMListIntimacy" />
+	<Packet Opcode="0x1029" Name="SMSetMurdererState" />
+	<Packet Opcode="0x141F" Name="SMExplorationInfo" />
+	<Packet Opcode="0x10DF" Name="SMExplorePointList" />
+	<Packet Opcode="0x10EF" Name="SMReservedLearningSkill" />
+	<Packet Opcode="0x147A" Name="SMEnablePvP" />
+	<Packet Opcode="0x15FE" Name="SMEnableAdrenalin" />
+	<Packet Opcode="0x1222" Name="SMSetRegionProductivity" />
+	<Packet Opcode="0x0F33" Name="SMInitializeRegionWeatherData" />
+	<Packet Opcode="0x17EA" Name="SMInitializeWeatherData" />
+	<Packet Opcode="0x1373" Name="SMChangeWeathers" />
+	<Packet Opcode="0x0F6A" Name="SMAddMonsters" />
+	<Packet Opcode="0x12FF" Name="SMDieNonPlayer" />
+	<Packet Opcode="0x0E7A" Name="SMAddDeadBodys" />
+	<Packet Opcode="0x0E8E" Name="SMRemoveActor" />
+	<Packet Opcode="0x175F" Name="SMStartAction" />
+	<Packet Opcode="0x0D38" Name="SMSetTendency" />
+	<Packet Opcode="0x1052" Name="SMStartCharacterNoUseNaviMoving" />
+	<Packet Opcode="0x0DDD" Name="SMMovePlayer" />
+	<Packet Opcode="0x0E26" Name="SMRideOnVehicle" />
+	<Packet Opcode="0x1681" Name="SMAcceptQuest" />
+	<Packet Opcode="0x0BE1" Name="SMListSiegeGuild" />
+	<Packet Opcode="0x12F1" Name="SMActionRotate" />
+	<Packet Opcode="0x1407" Name="SMAddNpcs" />
+	<Packet Opcode="0x0E07" Name="SMContactNpc" />
+	<Packet Opcode="0x0E3A" Name="SMUpdateQuest" />
+	<Packet Opcode="0x1087" Name="SMCreateCard" />
+	<Packet Opcode="0x1785" Name="SMUpdateIntimacy" />
+	<Packet Opcode="0x0E1D" Name="SMBeginDelayedLogout" />
+	<Packet Opcode="0x0D07" Name="SMTopLifeRanking" />
+	<Packet Opcode="0x13CD" Name="SMTopContentsRanking" />
+	<Packet Opcode="0x18A5" Name="SMTopMatchRanking" />
+	<Packet Opcode="0x16F2" Name="SMExitFieldToCharacterSelection" />
+	
+  </ServerPackets>
+</Protocol>
