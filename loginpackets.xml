@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Protocol>
+  <ClientPackets>
+    <Packet Name="CMHeartbeat" Opcode="0x03E9">
+      <States>
+        <AUTHED/>
+        <AUTHED_GG/>
+        <CONNECTED/>
+        <ENTERED/>
+      </States>
+    </Packet>
+    <Packet Name="CMGetCreateUserInformationToAuthenticServer" Opcode="0x14E1">
+      <States>
+        <CONNECTED/>
+      </States>
+    </Packet>
+    <Packet Name="CMLoginUserToAuthenticServer" Opcode="0x13C7">
+      <States>
+        <AUTHED_GG/>
+      </States>
+    </Packet>
+    <Packet Name="CMRegisterNickNameToAuthenticServer" Opcode="0x0F8C">
+      <States>
+        <AUTHED/>
+      </States>
+    </Packet>
+	</ClientPackets>
+  <ServerPackets>
+    <Packet Name="SMSetFrameworkInformation" Opcode="0x03EB"/>
+	<Packet Name="SMNak" Opcode="0x03F3" />
+	<Packet Name="SMFixedCharge" Opcode="0x0C9B"/>
+    <Packet Name="SMGetCreateUserInformationToAuthenticServer" Opcode="0x107E"/>
+    <Packet Name="SMLoginUserToAuthenticServer" Opcode="0x12C6"/>
+	<Packet Name="SMLoginUserToAuthenticServerNak" Opcode="0x0FC8"/>
+    <Packet Name="SMRegisterNickNameToAuthenticServer" Opcode="0x14C4"/>
+    <Packet Name="SMGetWorldInformations" Opcode="0x115C"/>
+    <Packet Name="SMGetContentServiceInfo" Opcode="0x1920"/>
+	<Packet Name="SMLoadChatMacro" Opcode="0x1694"/>
+  </ServerPackets>
+</Protocol>
