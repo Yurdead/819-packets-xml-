@@ -55,11 +55,11 @@
 	<Packet Name="CMSetReadyToPlay" Opcode="0x16D1"/>
 	<Packet Name="CMRefreshCacheData" Opcode="0x1927"/>
 	
-	<!-- <Packet Name="CMReadJournal" Opcode="0x0D43"/> --> 
+	<Packet Name="CMReadJournal" Opcode="0x0D43"/> 
 	
-	<!-- <Packet Name="CMListSiegeGuild" Opcode="0x0F9E" /> -->
+	<Packet Name="CMListSiegeGuild" Opcode="0x0F9E" />
 	
-	<!-- <Packet Name="CMGetWebBenefit" Opcode="0x0BE8"/> -->
+	<Packet Name="CMGetWebBenefit" Opcode="0x0BE8"/> 
 	
 	<Packet Name="CMStartAction" Opcode="0x0D1A"/>
 	<Packet Name="CMListEnchantFailCountOfMyCharacter" Opcode="0x0C6D"/>
@@ -71,23 +71,17 @@
 	
   </ClientPackets>
   
-  <ServerPackets>
-	<!-- ALL FIX -->
-	
-	
-	
-	<!-- ALL FIX FINISH -->
-  
+    <ServerPackets>
     <Packet Opcode="0x03EB" Name="SMSetFrameworkInformation" />
 	<Packet Opcode="0x03F3" Name="SMNak" />
     <Packet Opcode="0x1920" Name="SMGetContentServiceInfo" />
 	
-	<Packet Opcode="0x0BC0" Name="SMAddCollectInfo"/>
+	<Packet Opcode="0x1284" Name="SMAddCollectInfo"/>
 	
     <Packet Opcode="0x1102" Name="SMChargeUser" />  	
 	<Packet Opcode="0x0FC8" Name="SMLoginUserToFieldServer" />
 	
-    <Packet Opcode="0x1284" Name="SMSetPlayerCharacterMemo" /> -->
+    <!-- <Packet Opcode="" Name="SMSetPlayerCharacterMemo" /> -->
 	
     <Packet Opcode="0x12D0" Name="SMPcRoomAuth" />
     <Packet Opcode="0x18F9" Name="SMCreateCharacterToField" />
@@ -100,7 +94,7 @@
 	<Packet Opcode="0x130B" Name="SMLoadFieldComplete" />
 	<Packet Opcode="0x12E1" Name="SMAddPlayers" /> 
 	
-	<!-- <Packet Opcode="0x0C5F" Name="SMChangeServerBusyState" /> -->
+	<Packet Opcode="0x0C5F" Name="SMChangeServerBusyState" />
 	
 	<Packet Opcode="0x17DB" Name="SMUpdateWeatherManager" />
 	
@@ -109,7 +103,7 @@
 	<Packet Opcode="0x0FDA" Name="SMAddItemToInventory" />
 	<Packet Opcode="0x1064" Name="SMInventorySlotCount" />
 	
-	<!-- <Packet Opcode="0x0D32" Name="SMGetAllEquipSlot" /> -->
+	<Packet Opcode="0x0D32" Name="SMGetAllEquipSlot" /> 
 	
 	<Packet Opcode="0x0F7F" Name="SMActiveSkillList" />
 	
@@ -171,7 +165,6 @@
 	<Packet Opcode="0x1373" Name="SMChangeWeathers" />
 	<Packet Opcode="0x0F6A" Name="SMAddMonsters" />
 	
-	<!-- <Packet Opcode="" Name="SMAddVehicles"/> -->
 	<Packet Opcode="0x0BBE" Name="SMAddVehicles"/>
 	
 	<Packet Opcode="0x12FF" Name="SMDieNonPlayer" />
@@ -184,7 +177,7 @@
 	<Packet Opcode="0x0E26" Name="SMRideOnVehicle" />
 	<Packet Opcode="0x1681" Name="SMAcceptQuest" />
 	
-	<!-- <Packet Opcode="0x0BE1" Name="SMListSiegeGuild" /> -->
+	<Packet Opcode="0x0BE1" Name="SMListSiegeGuild" /> 
 	
 	<Packet Opcode="0x12F1" Name="SMActionRotate" />
 	<Packet Opcode="0x1407" Name="SMAddNpcs" />
